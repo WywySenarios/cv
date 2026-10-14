@@ -1,0 +1,6 @@
+[submodule "data"]
+	path = data
+	url = https://github.com/WywySenarios/cv-data.git
+[submodule "applications"]
+	path = applications
+	url = https://github.com/WywySenarios/cv-applications.git
