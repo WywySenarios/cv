@@ -1,0 +1,11 @@
+# Abstract sample skills — placeholders only.
+
+- id: skills-a
+  label: Group A
+  tags: [a]
+  items: [A1, A2, A3]
+
+- id: skills-b
+  label: Group B
+  tags: [b]
+  items: [B1, B2, B3]

@@ -1,0 +1,28 @@
+# Abstract sample experience — placeholders only.
+
+- id: experience-a
+  org: Organization A
+  title: Role A
+  location: Location A
+  start: 2025-01
+  end: 2025-06
+  tags: [a]
+  bullets:
+    - id: experience-a-1
+      tags: [a]
+      text: "Accomplishment A."
+    - id: experience-a-2
+      tags: [b]
+      text: "Accomplishment B."
+
+- id: experience-b
+  org: Organization B
+  title: Role B
+  location: Location B
+  start: 2024-01
+  end: 2024-12
+  tags: [b]
+  bullets:
+    - id: experience-b-1
+      tags: [b]
+      text: "Accomplishment C."

@@ -1,0 +1,9 @@
+# Abstract sample contact — placeholders only, no real person.
+# Same schema as data/contact.yaml.
+
+name: "A"
+phone: "(000) 000-0000"
+email: a@example.com
+links:
+  - label: example.com/a
+    url: https://example.com/a

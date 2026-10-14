@@ -1,0 +1,19 @@
+# Abstract sample projects — placeholders only.
+
+- id: project-a
+  name: Project A
+  dates: 2025-01..2025-06
+  tags: [a]
+  bullets:
+    - id: project-a-1
+      tags: [a]
+      text: "Detail A."
+
+- id: project-b
+  name: Project B
+  dates: 2024-07..2024-12
+  tags: [b]
+  bullets:
+    - id: project-b-1
+      tags: [b]
+      text: "Detail B."

@@ -1,0 +1,9 @@
+# Abstract sample summaries — placeholders only.
+
+- id: summary-a
+  tags: [a]
+  text: "Summary line A."
+
+- id: summary-b
+  tags: [b]
+  text: "Summary line B."

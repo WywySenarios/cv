@@ -1,0 +1,16 @@
+# Abstract sample education — placeholders only.
+
+- id: education-a
+  school: Institution A
+  location: Location A
+  credential: Credential A
+  start: 2021
+  end: 2025
+  tags: [a]
+  courses:
+    - id: education-a-1
+      tags: [a]
+      text: "Course A"
+    - id: education-a-2
+      tags: [a]
+      text: "Course B"
