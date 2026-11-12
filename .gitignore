@@ -1,3 +1,5 @@
+.DS_Store
+
 # Python / uv
 .venv/
 __pycache__/
