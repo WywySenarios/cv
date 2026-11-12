@@ -4,11 +4,8 @@
 from __future__ import annotations
 
 import sys
-from pathlib import Path
 
-import yaml
-
-ROOT = Path(__file__).resolve().parent.parent
+from _common import ROOT, call, esc, load
 
 MONTHS = [
     "Jan",
@@ -24,32 +21,6 @@ MONTHS = [
     "Nov",
     "Dec",
 ]
-
-# LaTeX special characters. str.translate makes a single pass, so the braces in
-# the replacement strings are not re-escaped (a sequential .replace would).
-_ESCAPES = {
-    "\\": r"\textbackslash{}",
-    "&": r"\&",
-    "%": r"\%",
-    "$": r"\$",
-    "#": r"\#",
-    "_": r"\_",
-    "{": r"\{",
-    "}": r"\}",
-    "~": r"\textasciitilde{}",
-    "^": r"\textasciicircum{}",
-}
-_ESCAPE_TABLE = str.maketrans(_ESCAPES)
-
-
-def esc(value) -> str:
-    """Escape a value for LaTeX text mode."""
-    return ("" if value is None else str(value)).translate(_ESCAPE_TABLE)
-
-
-def load(path: Path):
-    with path.open() as fh:
-        return yaml.safe_load(fh)
 
 
 def index_by_id(records):
@@ -89,11 +60,6 @@ def fmt_dates(record) -> str:
         start, end = record["dates"].split("..")
         return f"{fmt_month(start)} \u2013 {fmt_month(end)}"
     return f"{fmt_month(record['start'])} \u2013 {fmt_month(record['end'])}"
-
-
-def call(name: str, *args: str) -> str:
-    """Emit a macro call with braced arguments: \\name{arg}{arg}."""
-    return name + "".join("{" + arg + "}" for arg in args)
 
 
 def bullet_list(records) -> str:
